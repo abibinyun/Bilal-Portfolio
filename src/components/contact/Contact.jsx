@@ -35,7 +35,7 @@ const Contact = () => {
           </article>
         </div>
         <form ref={formRef} onSubmit={handleSubmit}>
-          <input type="text" placeholder="Dear - Bilal" name="to_name" id="to_name" required hidden />
+          <input type="text" placeholder="Dear - Bilal" name="to_name" id="to_name" hidden />
           <input type="text" placeholder="Your Full Name" name="from_name" id="from_name" required />
           <input type="text" placeholder="Your Email" name="reply_to" id="reply_to" required />
           <textarea placeholder="Your message" rows="7" name="message" id="message" required></textarea>
