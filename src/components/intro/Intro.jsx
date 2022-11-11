@@ -1,5 +1,5 @@
 import React from "react";
-import { FaAward } from "react-icons/fa";
+import { FaAward, FaBullseye } from "react-icons/fa";
 import { VscFolderLibrary } from "react-icons/vsc";
 import ME from "../../assets/me.jpg";
 import "./intro.css";
@@ -20,12 +20,17 @@ const Intro = () => {
             <article className="about__card">
               <FaAward className="about__icon" />
               <h5>Experience</h5>
-              <small>3 Months</small>
+              <small>Fresh Graduate</small>
+            </article>
+            <article className="about__card">
+              <FaBullseye className="about__icon" />
+              <h5>Mentoring</h5>
+              <small>Fullstack Web Developer</small>
             </article>
             <article className="about__card">
               <VscFolderLibrary className="about__icon" />
               <h5>Projects</h5>
-              <small>3+ Completed Projects</small>
+              <small>1 Completed Projects</small>
             </article>
           </div>
           <p>
