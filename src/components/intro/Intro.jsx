@@ -34,8 +34,8 @@ const Intro = () => {
             </article>
           </div>
           <p>
-            The very rapid development in the field of technology makes me thirsty for knowledge. Therefore, I took the decision to focus on programming in order to compete in today's era. Armed with the knowledge I gained through bootcamp,
-            I am confident and able to become a programmer as a junior frontend developer.
+            Saya adalah seorang junior fullstack web developer. Saya belajar mengenai teknologi MERN selama 4 bulan di Eduwork.id. Saya memiliki 1 project website POS System dengan menerapkan React JS untuk frontend, redux untuk state
+            management, Node JS dan Express JS untuk backend serta MongoDB sebagai database.
           </p>
           <a href="#contact" className="btn btn-primary">
             Let's Talk

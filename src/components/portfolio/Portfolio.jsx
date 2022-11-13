@@ -1,6 +1,7 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import IMG2 from "../../assets/pro_mern_pos.png";
+import { HashLink } from "react-router-hash-link";
 
 import "./portfolio.css";
 
@@ -8,10 +9,10 @@ const Portfolio = () => {
   const soloProjects = [
     {
       id: 1,
-      title: "POS App",
+      title: "POS System",
       img: IMG2,
-      description: "User friendly application to display menu and manage orders, add address from user login and get invoice after purchase",
-      technologies: "React | Redux | Express | MongoDB",
+      // description: "User friendly application to display menu and manage orders, add address from user login and get invoice after purchase",
+      // technologies: "React | Redux | Express | MongoDB",
       link: "https://pos-client-cyan.vercel.app/#/",
       github: "https://github.com/abibinyun/POS-client",
     },
@@ -33,13 +34,16 @@ const Portfolio = () => {
               <p>{pro.description}</p>
               <p>{pro.technologies}</p>
             </div>
-            <div className="container portfolio__item-cta" style={{ marginTop: "10px" }}>
+            <div className="container portfolio__item-cta">
               <a href={pro.github} target="_blank" className="btn" rel="noreferrer">
                 GitHub
               </a>
-              <Link to={"/detail"} className="btn">
+              {/* <Link className="btn" to={{ pathname: "/detail", hash: "#detail" }} data-target="head">
                 Detail
-              </Link>
+              </Link> */}
+              <HashLink className="btn" to="/detail#detail">
+                Detail
+              </HashLink>
               <a href={pro.link} target="_blank" className="btn btn-primary" rel="noreferrer">
                 Visit Website
               </a>

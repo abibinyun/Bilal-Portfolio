@@ -9,7 +9,7 @@ import Topbar from "../../components/topbar/Topbar";
 
 const MainApp = () => {
   return (
-    <div>
+    <div id="MainApp">
       <Header />
       <Topbar />
       <Intro />

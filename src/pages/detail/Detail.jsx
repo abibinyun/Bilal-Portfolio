@@ -7,7 +7,7 @@ import Img5 from "../../assets/detail_product/5-alamat.png";
 import Img6 from "../../assets/detail_product/6-login.png";
 import CursorZoom from "react-cursor-zoom";
 import "./detail.css";
-import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 const Detail = () => {
   const partDetail = [
@@ -52,14 +52,14 @@ const Detail = () => {
     },
   ];
   return (
-    <section id="detail">
+    <section id="detail" style={{ marginBottom: "5rem" }}>
       <div className="head container">
-        <h1>Website POS</h1>
+        <h1>Website POS System</h1>
         <b>MongoDB || Express JS || Node JS || React JS</b>
         <p style={{ marginTop: "15px", marginBottom: "20px" }}>
-          Website POS ini dibuat dengan menerapkan teknologi MERN yaitu React JS untuk frontend, redux untuk state management, Node JS dan Express JS untuk backend dan MongoDB sebagai database. Hak akses yang diterapkan dalam website POS
-          ini dibagi ke dalam 3 role yaitu sebagai admin, user dan guest. Sedangkan guest memiliki hak akses yang sangat terbatas karena ada beberapa fitur website yang hanya bisa diakses jika sudah login (role user). Adapun fitur-fitur di
-          dalam website POS ini akan dijelaskan secara detail sebagai berikut.
+          Website POS System ini dibuat dengan menerapkan teknologi MERN yaitu React JS untuk frontend, redux untuk state management, Node JS dan Express JS untuk backend dan MongoDB sebagai database. Hak akses yang diterapkan dalam website
+          POS ini dibagi ke dalam 3 role yaitu sebagai admin, user dan guest. Sedangkan guest memiliki hak akses yang sangat terbatas karena ada beberapa fitur website yang hanya bisa diakses jika sudah login (role user). Adapun fitur-fitur
+          di dalam website POS ini akan dijelaskan secara detail sebagai berikut.
         </p>
       </div>
       <div className="container detail__container">
@@ -89,9 +89,9 @@ const Detail = () => {
         ))}
       </div>
       <div className="container detail__item-cta">
-        <Link to={"/"} className="btn">
+        <HashLink className="btn" to="/#MainApp">
           Home
-        </Link>
+        </HashLink>
       </div>
     </section>
   );
